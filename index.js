@@ -35,7 +35,7 @@ var currDeaf = false
 client.once('ready', () => {
     console.log('Deafen Updates Online.');
     const msgId = client.channels.cache.get(channelid).lastMessageId
-    client.channels.cache.get(channelid).messages.fetch(msgId).then((li) => {
+    client.channels.cache.get('1136815741459497100').messages.fetch(msgId).then((li) => {
        totalTime = parseInt(li.content)
     })
     startTimer()
